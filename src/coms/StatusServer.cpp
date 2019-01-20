@@ -1,11 +1,9 @@
 #include "StatusServer.h"
 
-void StatusServer::event(float *buffer) {
-
   /*
    * ======= PART 1: Generate a response to be sent back to MATLAB =============
    */
-  void StatusServer::event(float *packet) {
+ void StatusServer::event(float *packet) {
     // we will be using the same memory area in which the incoming packet was
     // stored, however, a we need to perform a type cast first (for
     // convenience).

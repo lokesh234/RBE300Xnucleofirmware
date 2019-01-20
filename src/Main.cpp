@@ -140,7 +140,7 @@ int main() {
 
   coms.attach(new PidServer(pid, DOFs));
   // coms.attach(new PidConfigServer(pid, DOFs));
-  coms.attach(new StatusServer(pid, DOFs))
+  coms.attach(new StatusServer(pid, DOFs));
 
 #ifdef DEBUG_
       printf("\r\n\r\n Initialization complete. \r\n\r\n");
