@@ -35,7 +35,7 @@ HIDSimplePacket coms;     // HID packet handlers
 
 // The following array contains the "home" positions (in encoder ticks) for each
 // of the robot's joints
-float homePosition[3] = {-999.0, 2961.0, 2280.0};
+float homePosition[3] = {-997.0, 2960.325, 2287.05};
 
 void runPid() {
   // update all positions fast and together
