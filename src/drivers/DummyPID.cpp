@@ -30,7 +30,7 @@ void DummyPID::onPidConfigureLocal(){
   state.config.lowerHistoresis = state.config.stop-0.01;
   // a value in encoder units that representst the noise floor of the sensor when detecting stall homing
   state.homing.homingStallBound = 20.0f;
-  printf("\nPID initialized");
+  //printf("\nPID initialized");
 }
 
 void DummyPID::MathCalculationPosition( float currentTime){RunAbstractPIDCalc( currentTime);}

@@ -143,7 +143,7 @@ int main() {
   coms.attach(new StatusServer(pid, DOFs));
 
 #ifdef DEBUG_
-      printf("\r\n\r\n Initialization complete. \r\n\r\n");
+  printf("\r\n\r\n Initialization complete. \r\n\r\n");
   printf("\r\n\r\n Starting main loop... \r\n\r\n");
 #endif
 
