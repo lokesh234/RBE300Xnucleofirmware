@@ -141,6 +141,9 @@ int main() {
   coms.attach(new PidServer(pid, DOFs));
   // coms.attach(new PidConfigServer(pid, DOFs));
   coms.attach(new StatusServer(pid, DOFs));
+  coms.attach(new GripperServer());
+  //Servo newservo(GRIPPER_SERVO, 5);
+  //newservo.write(1.0);
 
 #ifdef DEBUG_
   printf("\r\n\r\n Initialization complete. \r\n\r\n");
