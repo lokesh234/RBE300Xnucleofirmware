@@ -2,11 +2,16 @@
 
 void GripperServer::event(float * buffer){
 	Servo myservo(GRIPPER_SERVO, 5);
-	if(buffer[3] == 6){
-	myservo = 0.8;
-	wait(2);
+	if (buffer[3] == 4){
+		for(int i=0; i<100; i++) {
+		             myservo = i/100.0;
+		             wait(0.01);
+		         }
 	}
-	if(buffer[3] == 5){
-	myservo = 0;
+	if (buffer[3] == 5){
+		for(int i=0; i<100; i--) {
+		             myservo = i/100.0;
+		             wait(0.01);
+		         }
 	}
 }
