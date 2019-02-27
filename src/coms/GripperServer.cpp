@@ -6,6 +6,6 @@ void GripperServer::event(float * buffer){
 	    myservo = 0.0;
 	}
 	if (buffer[0] == 5){
-		myservo = 0.8;
+		myservo = 0.9;
 	}
 }
